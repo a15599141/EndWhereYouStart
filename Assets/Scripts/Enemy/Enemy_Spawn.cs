@@ -19,7 +19,7 @@ namespace CodeMonkey.HealthSystemCM {
 
         private void Spawn() {
             Vector3 spawnPosition = ZombiePrefab.position; //生成在预制体的位置
-            Instantiate(ZombiePrefab, spawnPosition, Quaternion.identity);
+            Instantiate(ZombiePrefab,spawnPosition, Quaternion.identity,transform);
         }
 
     }

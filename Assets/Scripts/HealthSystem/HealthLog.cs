@@ -4,14 +4,14 @@ using UnityEngine;
 namespace CodeMonkey.HealthSystemCM {
 
     /// <summary>
-    /// Health System Demo
+    /// Health System 
     /// Showcases a Unit with a Health System and some UI Buttons to Damage and Heal that Unit
     /// The Unit has a HealthSystemComponent which creates a HealthSystem
     /// The Buttons have a reference for that HealthSystemComponent and deal damage
     /// 
     /// Also demonstrates all the Events fired by the HealthSystem which can be used to update a Health Bar
     /// </summary>
-    public class Demo : MonoBehaviour {
+    public class HealthLog : MonoBehaviour {
 
         [SerializeField] private GameObject getHealthSystemGameObject;
         [SerializeField] private TextMesh textMesh;

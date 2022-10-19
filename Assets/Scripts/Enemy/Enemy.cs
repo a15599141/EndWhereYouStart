@@ -5,10 +5,11 @@ namespace CodeMonkey.HealthSystemCM {
     public class Enemy : MonoBehaviour, IGetHealthSystem {
 
         private HealthSystem healthSystem;
+        private float healthAmountMax = 100f;
         public float speed = 1f;
 
         private void Awake() {
-            healthSystem = new HealthSystem(100);
+            healthSystem = new HealthSystem(healthAmountMax);
             healthSystem.OnDead += HealthSystem_OnDead;
         }
 

@@ -6,7 +6,7 @@ namespace CodeMonkey.HealthSystemCM {
     /// <summary>
     /// Heal the HealthSystem on Click
     /// </summary>
-    public class Demo_HealButton : MonoBehaviour {
+    public class HealButton : MonoBehaviour {
 
         [SerializeField] private GameObject getHealthSystemGameObject;
 

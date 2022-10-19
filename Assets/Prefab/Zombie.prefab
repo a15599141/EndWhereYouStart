@@ -209,11 +209,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6848739073341297853, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_EffectDistance.x
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6848739073341297853, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_EffectDistance.y
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6848739073373570983, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: getHealthSystemGameObject
@@ -221,15 +221,19 @@ PrefabInstance:
       objectReference: {fileID: 2177330334973535419}
     - target: {fileID: 6848739073536652052, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_EffectDistance.x
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6848739073536652052, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_EffectDistance.y
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699834, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_Name
-      value: pfHealthBarUIWorldCanvas
+      value: HPBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848739074368699836, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_Pivot.x
@@ -268,6 +272,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -301,7 +313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 6.82
+      value: 5.58
       objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

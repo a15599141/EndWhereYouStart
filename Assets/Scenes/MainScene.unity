@@ -509,7 +509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152648648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.66, y: 6.22, z: 0}
+  m_LocalPosition: {x: -23.02, y: 6.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4774,7 +4774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1012282881
 Transform:
   m_ObjectHideFlags: 0
@@ -5874,7 +5874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -163.5, y: -40.999878}
+  m_AnchoredPosition: {x: -960, y: -617}
   m_SizeDelta: {x: 61, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394430296
@@ -6750,7 +6750,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128617428}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.54, y: 6.22, z: 0}
+  m_LocalPosition: {x: 7.51, y: 6.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6810,6 +6810,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2297232621441019047, guid: e461a5c50f7b8ec4bac562f5fbad8dae, type: 3}
+      propertyPath: startingHealthAmount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2297232621441019048, guid: e461a5c50f7b8ec4bac562f5fbad8dae, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -6858,6 +6862,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4336150782499170232, guid: e461a5c50f7b8ec4bac562f5fbad8dae, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336150782674817802, guid: e461a5c50f7b8ec4bac562f5fbad8dae, type: 3}
+      propertyPath: getHealthSystemGameObject
+      value: 
+      objectReference: {fileID: 2050180691}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

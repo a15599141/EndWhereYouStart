@@ -7,7 +7,7 @@ namespace CodeMonkey.HealthSystemCM {
     /// Demonstrates how you can listen to the various Events by the HealthSystem 
     /// to do some logic like spawn some particles or destroy this Unit
     /// </summary>
-    public class Demo_Unit : MonoBehaviour {
+    public class HealthEffectGet : MonoBehaviour {
 
         [SerializeField] private ParticleSystem damageParticleSystem;
         [SerializeField] private ParticleSystem healParticleSystem;

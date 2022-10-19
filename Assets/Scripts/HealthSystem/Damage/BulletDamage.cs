@@ -2,7 +2,7 @@
 
 namespace CodeMonkey.HealthSystemCM {
 
-    public class Demo_Bullet : MonoBehaviour {
+    public class BulletDamage : MonoBehaviour {
 
 
         private void Start() {

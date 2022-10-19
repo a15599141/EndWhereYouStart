@@ -58,37 +58,37 @@
     <Analyzer Include="D:\Unity3D\2023.1.0a13\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Demo\Demo_HealButton.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\Damage\DamageCannon.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HealthEffectGet.cs" />
     <Compile Include="Assets\CodeMonkey\HealthSystem\_Readme\Readme_HealthSystem.cs" />
     <Compile Include="Assets\Scripts\Protal.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Scripts\HealthBarUI.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Demo\HammerDamage.cs" />
     <Compile Include="Assets\Scripts\Player\GroundSensor.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Demo\Demo_Cannon.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HealthEffectAwake.cs" />
     <Compile Include="Assets\Scripts\Player\Weapon.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Demo\Demo_Bullet.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HealthBarUI.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\LookAtCamera.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HealthLog.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HealthSystemComponent.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\IGetHealthSystem.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Scripts\HealthSystemComponent.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Demo\Demo_UnitCSharp.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\Heal\HealButton.cs" />
     <Compile Include="Assets\Scripts\UI_Feedback.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\Damage\HammerDamage.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy_Spawn.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Demo\Demo.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Scripts\IGetHealthSystem.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\Damage\BulletDamage.cs" />
+    <Compile Include="Assets\Scripts\HealthSystem\HealthSystem.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\Demo\Demo_Unit.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
   </ItemGroup>
   <ItemGroup>

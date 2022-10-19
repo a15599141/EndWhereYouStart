@@ -6,7 +6,7 @@ namespace CodeMonkey.HealthSystemCM {
     /// Demo Unit
     /// This one creates the HealthSystem through the C# constructor instead of using the Component
     /// </summary>
-    public class Demo_UnitCSharp : MonoBehaviour, IGetHealthSystem {
+    public class HealthEffectAwake : MonoBehaviour, IGetHealthSystem {
 
         [SerializeField] private ParticleSystem damageParticleSystem;
         [SerializeField] private ParticleSystem healParticleSystem;

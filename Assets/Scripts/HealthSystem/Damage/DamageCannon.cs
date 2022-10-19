@@ -5,7 +5,7 @@ namespace CodeMonkey.HealthSystemCM {
     /// <summary>
     /// 
     /// </summary>
-    public class Demo_Cannon : MonoBehaviour {
+    public class DamageCannon : MonoBehaviour {
 
         [SerializeField] private Transform pfBullet;
 
