@@ -58,8 +58,8 @@
     <Analyzer Include="D:\Unity3D\2023.1.0a13\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\HealthSystem\Readme\Editor\ReadmeEditor_HealthSystem.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
-    <Compile Include="Assets\CodeMonkey\HealthSystem\_Readme\Editor\ReadmeEditor_HealthSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\JMO Assets\Editor\JMOAssets_CartoonFXFreeWelcome.dll" />
