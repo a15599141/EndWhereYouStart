@@ -12,7 +12,7 @@ namespace CodeMonkey.HealthSystemCM {
 
         private void OnTriggerEnter2D(Collider2D collider2D) {
             if (collider2D.TryGetComponent(out Enemy zombie)) {
-                zombie.Damage();
+                zombie.Damage(20);
                 Destroy(gameObject);
             }
         }

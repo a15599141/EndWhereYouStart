@@ -22,8 +22,8 @@ namespace CodeMonkey.HealthSystemCM {
             Destroy(gameObject);
         }
 
-        public void Damage() {
-            healthSystem.Damage(40);
+        public void Damage(int damage) {
+            healthSystem.Damage(damage);
         }
 
         public HealthSystem GetHealthSystem() {

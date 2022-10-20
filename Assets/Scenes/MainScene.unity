@@ -617,16 +617,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 2177330334973535419, guid: 119362fa66f7604409b3fa3d7e6c07b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 119362fa66f7604409b3fa3d7e6c07b6, type: 3}
---- !u!4 &158362412 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2177330334973535396, guid: 119362fa66f7604409b3fa3d7e6c07b6, type: 3}
-  m_PrefabInstance: {fileID: 158362411}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &163371467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3915,7 +3914,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 158362412}
+  - {fileID: 2177330335123492751}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6756,6 +6755,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.2897897, y: 9.027727}
   m_EdgeRadius: 0
+--- !u!4 &2177330335123492751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2177330334973535396, guid: 119362fa66f7604409b3fa3d7e6c07b6, type: 3}
+  m_PrefabInstance: {fileID: 158362411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2297232620466809599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6764,6 +6768,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2297232621441019046, guid: e461a5c50f7b8ec4bac562f5fbad8dae, type: 3}
+      propertyPath: getHealthSystemGameObject
+      value: 
+      objectReference: {fileID: 605933141}
     - target: {fileID: 2297232621441019048, guid: e461a5c50f7b8ec4bac562f5fbad8dae, type: 3}
       propertyPath: m_RootOrder
       value: 8

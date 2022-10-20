@@ -28,7 +28,6 @@ public abstract class PlayerController :MonoBehaviour
             if (Input.GetKey(KeyCode.Mouse0))
             {
                 player_animator.Play("Attack");
-                
             }
             else
             {

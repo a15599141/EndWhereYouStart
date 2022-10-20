@@ -53,7 +53,6 @@ public class Player : PlayerController
             {
                 if (player_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                     return;
-
                 transform.transform.Translate(Vector2.right* move_x * MoveSpeed * Time.deltaTime);
             }
             else
