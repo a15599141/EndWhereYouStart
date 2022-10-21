@@ -7,7 +7,7 @@ namespace CodeMonkey.HealthSystemCM {
         [SerializeField] private Transform ZombiePrefab;
 
         private float spawnTimer;
-        private float spawnTimerMax = 5f; //怪物刷新间隔
+        private float spawnTimerMax = 2f; //怪物刷新间隔
 
         private void Update() {
             spawnTimer -= Time.deltaTime;

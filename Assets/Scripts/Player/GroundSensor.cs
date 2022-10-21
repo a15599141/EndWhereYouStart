@@ -19,10 +19,9 @@ public class GroundSensor : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D other)
     {
-    
 
         if (other.CompareTag("Ground") || other.CompareTag("Block"))
-        {
+        { 
 
             if (other.CompareTag("Ground"))
             {

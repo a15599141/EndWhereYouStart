@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using CodeMonkey.HealthSystemCM;
 
-namespace CodeMonkey.HealthSystemCM {
-
-    public class Enemy : MonoBehaviour, IGetHealthSystem {
+public class Enemy : MonoBehaviour, IGetHealthSystem {
 
         private HealthSystem healthSystem;
         private float healthAmountMax = 100f;
+        [SerializeField] private ParticleSystem damageParticleSystem;
+
         public float speed = 1f;
 
         private void Awake() {
@@ -19,16 +20,19 @@ namespace CodeMonkey.HealthSystemCM {
         }
 
         private void HealthSystem_OnDead(object sender, System.EventArgs e) {
-            Destroy(gameObject);
+            Animator enemy_anim = this.transform.Find("model").GetComponent<Animator>(); 
+            enemy_anim.Play("Dead");
+            if(enemy_anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 && enemy_anim.GetCurrentAnimatorStateInfo(0).IsName("Dead")){
+                Destroy(gameObject);
+            }
         }
 
-        public void Damage(int damage) {
-            healthSystem.Damage(damage);
+        public void Damage(float damageAmount) {
+            healthSystem.Damage(damageAmount);
+            damageParticleSystem.Play();
         }
 
         public HealthSystem GetHealthSystem() {
             return healthSystem;
         }
-    }
-
 }

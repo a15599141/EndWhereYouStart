@@ -1,9 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CodeMonkey.HealthSystemCM;
 
-public class Player : PlayerController
+public class Player : PlayerController, IGetHealthSystem
 {
+    private HealthSystem healthSystem;
+    private float healthAmountMax = 100f;
+    [SerializeField] private ParticleSystem damageParticleSystem;
+
+    // HealthSystem 
+    private void Awake() {
+            healthSystem = new HealthSystem(healthAmountMax);
+            healthSystem.OnDead += HealthSystem_OnDead;
+    }
+
+    private void HealthSystem_OnDead(object sender, System.EventArgs e) {
+            Animator anim = this.transform.Find("model").GetComponent<Animator>(); 
+            anim.SetInteger("health",0);
+            if(anim.GetCurrentAnimatorStateInfo(0).IsName("Dead")){
+                Destroy(gameObject);
+            }
+    }
+
+    public void Damage(float damageAmount) {
+            healthSystem.Damage(damageAmount);
+            damageParticleSystem.Play();
+    }
+
+    public HealthSystem GetHealthSystem() {
+            return healthSystem;
+    }
+
     private void Start()
     {
         // 获取动画、刚体和碰撞器组件
@@ -51,16 +79,12 @@ public class Player : PlayerController
         {
             if (isGrounded)  
             {
-                if (player_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                    return;
                 transform.transform.Translate(Vector2.right* move_x * MoveSpeed * Time.deltaTime);
             }
             else
             {
                 transform.transform.Translate(new Vector3(move_x * MoveSpeed * Time.deltaTime, 0, 0));
             }
-            if (player_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                return;
 
             if (!Input.GetKey(KeyCode.A))
                 Filp(false);
@@ -69,8 +93,6 @@ public class Player : PlayerController
         {
             if (isGrounded)  
             {
-                if (player_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                    return;
                 transform.transform.Translate(Vector2.right * move_x * MoveSpeed * Time.deltaTime);
 
             }
@@ -79,16 +101,12 @@ public class Player : PlayerController
                 transform.transform.Translate(new Vector3(move_x * MoveSpeed * Time.deltaTime, 0, 0));
 
             }
-            if (player_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                return;
 
             if (!Input.GetKey(KeyCode.D))
                 Filp(true);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (player_animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                return;
 
             if (currentJumpCount < JumpCount)  // 0 , 1
             {
